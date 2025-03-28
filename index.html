@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Digital - Gestión Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="gradient-bg text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Gestión Profesional de Kit Digital</h1>
+            <p class="text-xl mb-8">Optimizamos tu transformación digital con soluciones integrales</p>
+            <a href="#contacto" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Contáctanos</a>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <i class="fas fa-digital-tachograph text-blue-600 text-5xl mb-4"></i>
+                <h2 class="text-2xl font-semibold mb-4">Asesoramiento Integral</h2>
+                <p>Analizamos tus necesidades y te guiamos en la implementación de soluciones digitales adaptadas a tu negocio.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <i class="fas fa-certificate text-blue-600 text-5xl mb-4"></i>
+                <h2 class="text-2xl font-semibold mb-4">Tramitación Garantizada</h2>
+                <p>Gestionamos todos los trámites y documentos necesarios para obtener la ayuda del Kit Digital de manera eficiente.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <i class="fas fa-laptop-code text-blue-600 text-5xl mb-4"></i>
+                <h2 class="text-2xl font-semibold mb-4">Soluciones Tecnológicas</h2>
+                <p>Te ayudamos a implementar las mejores herramientas digitales para impulsar la competitividad de tu empresa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Nuestros Servicios</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-chart-line text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">Web y Presencia Digital</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-shopping-cart text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">Comercio Electrónico</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-tools text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">Gestión CRM</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-headset text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-semibold mb-2">Gestión de Clientes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container mx-auto px-4 py-16">
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center mb-8">Reserva tu Consulta</h2>
+            <form action="https://formspree.io/f/xnnpbjey" method="POST" class="space-y-4">
+                <input type="text" name="nombre" placeholder="Nombre" required class="w-full p-3 border rounded-md">
+                <input type="email" name="email" placeholder="Correo Electrónico" required class="w-full p-3 border rounded-md">
+                <input type="tel" name="telefono" placeholder="Teléfono" required class="w-full p-3 border rounded-md">
+                
+                <select name="servicio" class="w-full p-3 border rounded-md" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="web_digital">Web y Presencia Digital</option>
+                    <option value="ecommerce">Comercio Electrónico</option>
+                    <option value="crm">Gestión CRM</option>
+                    <option value="gestion_clientes">Gestión de Clientes</option>
+                </select>
+
+                <textarea name="mensaje" placeholder="Detalles de tu consulta" required class="w-full p-3 border rounded-md" rows="4"></textarea>
+                
+                <button type="submit" class="w-full gradient-bg text-white py-3 rounded-md hover:opacity-90 transition">
+                    Reservar Consulta
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Gestión Kit Digital. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
